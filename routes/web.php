@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/frutas', 'FrutasController@index');
+Route::get('/naranjas', 'FrutasController@naranjas');
+Route::get('/peras', 'FrutasController@peras');
