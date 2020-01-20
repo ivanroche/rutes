@@ -1,9 +1,9 @@
 <h1> Listado de frutas</h1>
 
-<a href="{{action("FrutasController@naranjas")}}">Ĺink naranjas </a>
+<a href="{{action("FrutasController@getnaranjas")}}">Ĺink naranjas </a>
 <p> </p>
 
-<a href="{{action("FrutasController@peras")}}">Ĺink peras </a>
+<a href="{{action("FrutasController@getperas")}}">Ĺink peras </a>
 
 
 <ul>

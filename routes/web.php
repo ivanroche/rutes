@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/frutas', 'FrutasController@index');
-Route::get('/naranjas', 'FrutasController@naranjas');
-Route::get('/peras', 'FrutasController@peras');
+Route::get('/frutas', 'FrutasController@getindex');
+Route::get('/naranjas/{admin?}',['middleware' => 'EsAdmin',
+                        'uses' => 'FrutasController@getnaranjas']);
+
+Route::get('/peras', 'FrutasController@getperas');

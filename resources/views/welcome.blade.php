@@ -81,12 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Exemple rutes i links
+                    Exemple Middleware
                 </div>
 
                 <div class="links">
-                  <a href="{{action("FrutasController@naranjas")}}">Ĺink naranjas </a>
-                  <a href="{{action("FrutasController@peras")}}">Ĺink peras </a>
+                  <a href="{{action("FrutasController@getnaranjas")}}">Ĺink naranjas </a>
+                  <a href="{{action("FrutasController@getperas")}}">Ĺink peras </a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
